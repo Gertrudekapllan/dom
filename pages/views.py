@@ -3,6 +3,11 @@ from django.shortcuts import render
 from pages.models import Page
 
 
+def home_page(request):
+    pages = Page.objects.all()
+    return render(request, 'home_page.html', {'pages': pages})
+
+
 def silkscreen(request):
     page = Page.objects.get(machine_name='silkscreen')
     return render(request, 'silkscreen.html', {'page': page})
