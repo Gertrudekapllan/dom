@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 from pages.models import Page
+from post.models import Post
 
 
 def home_page(request):
@@ -10,7 +11,8 @@ def home_page(request):
 
 def silkscreen(request):
     page = Page.objects.get(machine_name='silkscreen')
-    return render(request, 'silkscreen.html', {'page': page})
+    posts = Post.objects.filter(category=1).order_by('-date_posted')
+    return render(request, 'silkscreen.html', {'page': page, 'posts': posts})
 
 
 def dtf_printing(request):

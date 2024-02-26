@@ -1,3 +1,8 @@
+header.header .logo {
+  background-color: #cccccc; }
+  header.header .logo img {
+    width: 60px; }
+
 div.gallery {
   border: 1px solid #ccc; }
 
@@ -38,38 +43,54 @@ div.desc {
 .main {
   flex: 70%;
   background-color: white;
-  padding: 20px;
-  margin-top: 40px;
-  /* Fake image, just for this example */ }
+  padding: 10px;
+  margin-top: 40px; }
   .main .video {
-    background-color: #777777;
+    background-color: #aaaaaa;
     width: 100%;
     height: 600px; }
     .main .video .slogan-wrapper .slogan {
       text-align: center;
-      color: white;
-      text-shadow: black; }
-  .main .header-text {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center; }
-  .main .text-wrapper {
-    width: 50%;
-    margin: 0 auto; }
-  .main .row {
+      color: white; }
+    .main .video .center-logo {
+      position: relative; }
+      .main .video .center-logo .image-center {
+        width: 40%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 80%); }
+
+.header-text {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; }
+
+.text-wrapper {
+  width: 50%;
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px; }
+  .row .column {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 20px; }
-    .main .row .column {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      margin: 20px; }
-  .main .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px; }
+    flex-direction: column;
+    flex: 1;
+    margin: 20px; }
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px; }
+
+.main-container {
+  width: 70%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
