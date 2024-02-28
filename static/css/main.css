@@ -1,5 +1,5 @@
 header.header .logo {
-  background-color: #cccccc; }
+  background-color: #aaaaaa; }
   header.header .logo img {
     width: 60px; }
 
@@ -91,6 +91,12 @@ div.desc {
 
 .main-container {
   width: 70%;
+  margin: 0 auto; }
+
+.button-wrapper {
+  margin-top: 20px; }
+
+.w3-btn {
   margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

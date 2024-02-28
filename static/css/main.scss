@@ -1,6 +1,6 @@
 header.header {
   .logo {
-    background-color: #cccccc;
+    background-color: #aaaaaa;
 
     img {
       width: 60px;
@@ -125,9 +125,15 @@ div.desc {
   padding: 20px;
 }
 
-.main-container{
+.main-container {
   width: 70%;
   margin: 0 auto;
 }
+.button-wrapper{
+  margin-top: 20px;
+}
+.w3-btn {
+  margin: 0 auto;
 
+}
 
