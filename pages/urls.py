@@ -9,4 +9,5 @@ urlpatterns = [
     path('services/embroidery/', views.embroidery, name='embroidery'),
     path('services/printing-special-effects/', views.printing_special_effects, name='printing_special_effects'),
     path('services/individual-print/', views.individual_print, name='individual_print'),
+    path('services/sublimation_printing/', views.sublimation_printing, name='sublimation_printing'),
 ]

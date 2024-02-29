@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from pages.models import Page
-from post.models import Post
+from post.models import Post, Image
 
 
 def home_page(request):
@@ -11,8 +11,9 @@ def home_page(request):
 
 def silkscreen(request):
     page = Page.objects.get(machine_name='silkscreen')
-    posts = Post.objects.filter(category=1).order_by('-date_posted')
-    return render(request, 'silkscreen.html', {'page': page, 'posts': posts})
+    posts = Post.objects.filter(category=1)
+    images = Image.objects.all()
+    return render(request, 'silkscreen.html', {'page': page, 'posts': posts, 'category': 1, 'images': images})
 
 
 def dtf_printing(request):
@@ -33,3 +34,8 @@ def printing_special_effects(request):
 def individual_print(request):
     page = Page.objects.get(machine_name='individual_print')
     return render(request, 'individual_print.html', {'page': page})
+
+
+def sublimation_printing(request):
+    pages = Page.objects.get(machine_name='sublimation_printing')
+    return render(request, 'sublimation_printing.html', {'page': pages})

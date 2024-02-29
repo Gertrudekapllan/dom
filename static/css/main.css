@@ -1,7 +1,9 @@
-header.header .logo {
-  background-color: #aaaaaa; }
-  header.header .logo img {
-    width: 60px; }
+header.header {
+  height: 80px; }
+  header.header .logo {
+    background-color: #aaaaaa; }
+    header.header .logo img {
+      width: 60px; }
 
 div.gallery {
   border: 1px solid #ccc; }

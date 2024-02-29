@@ -1,6 +1,9 @@
 header.header {
+  height: 80px;
+
   .logo {
     background-color: #aaaaaa;
+
 
     img {
       width: 60px;
@@ -129,11 +132,25 @@ div.desc {
   width: 70%;
   margin: 0 auto;
 }
-.button-wrapper{
+
+.button-wrapper {
   margin-top: 20px;
 }
+
 .w3-btn {
   margin: 0 auto;
 
 }
 
+.column-t-shirt {
+}
+
+//body {
+//  background-image: url("../../static/images/666.avif"), url("../../static/images/666.avif");
+//  border: 2px solid black;
+//  padding: 25px;
+//  background-size: 100% 100%;
+//  background-color: white;
+//  background-attachment: fixed;
+//  background-repeat: no-repeat;
+//}
