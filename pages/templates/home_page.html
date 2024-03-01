@@ -1,19 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
+    <div class="video-container">
+        <video id="background-video" autoplay loop muted
+               poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="../../static/videos/vector-back.mp4" type="video/mp4">
+        </video>
+    </div>
     <div class="main">
-        <div class="video">
-            <div class="slogan-wrapper">
-                <div class="slogan">
-                    Наши клиенты, те, кто имеет печальный опыт с другими шелкографиями Мы сделаем вам больно по-другому
-                </div>
-            </div>
-            <div class="center-logo">
-                <img class="image-center" src="../../static/images/logo.png">
-            </div>
-        </div>
+
         <div class="header-text">
             <h5>MAKES SOMETHING UNIQUE WITH US</h5>
-            <h1>VEKTOR Screen Printing</h1>
+            <h1>VECTOR Screen Printing</h1>
+        </div>
+        <div class="slogan-wrapper">
+            <div class="slogan">
+                Наши клиенты, те, кто имеет печальный опыт с другими шелкографиями Мы сделаем вам больно по-другому
+            </div>
         </div>
         <div class="text-wrapper">
             <div class="row">
@@ -55,14 +57,15 @@
             <div class="w3-panel w3-white">
                 <div class="row">
                     <div class="column">
-                        <object type="image/svg+xml" data="../../static/images/shirt_6398982.svg" width="400"
-                                height="400" class="svg-shadow">
+                        <object type="image/svg+xml" data="../../static/images/shirt_6398982.svg" width="100"
+                                height="100" class="svg-shadow">
                             <!-- Запасной контент, если браузер не может отобразить SVG -->
                             Ваш браузер не поддерживает отображение SVG.
                         </object>
 
                     </div>
-                    <div class="column"><h3>Работаем с 2003 года и бла бла бла</h3>
+                    <div class="column">
+                        <h1>Работаем с 2003 года и бла бла бла</h1>
                         <p>Работа с нами - это ДОРОГО, ДОЛГО И БОЛЬНО</p>
                     </div>
                 </div>
