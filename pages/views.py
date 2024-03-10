@@ -1,3 +1,4 @@
+from django.db.models import Subquery, OuterRef
 from django.shortcuts import render
 
 from pages.models import Page
@@ -6,19 +7,29 @@ from post.models import Post, Image
 
 def home_page(request):
     pages = Page.objects.all()
-    return render(request, 'home_page.html', {'pages': pages})
+    posts = Post.objects.all()
+    post_images = {}
+    for post in posts:
+        post_images[post] = Image.objects.filter(post=post)
+    return render(request, 'home_page.html', {'pages': pages, 'posts': posts, 'post_images': post_images})
 
 
 def silkscreen(request):
     page = Page.objects.get(machine_name='silkscreen')
     posts = Post.objects.filter(category=1)
-    images = Image.objects.all()
-    return render(request, 'silkscreen.html', {'page': page, 'posts': posts, 'category': 1, 'images': images})
+    post_images = {}
+    for post in posts:
+        post_images[post] = Image.objects.filter(post=post)
+    return render(request, 'silkscreen.html', {'page': page, 'post_images': post_images})
 
 
 def dtf_printing(request):
     page = Page.objects.get(machine_name='dtf_printing')
-    return render(request, 'dtf_printing.html', {'page': page})
+    posts = Post.objects.filter(category=6)
+    post_images = {}
+    for post in posts:
+        post_images[post] = Image.objects.filter(post=post)
+    return render(request, 'dtf_printing.html', {'page': page, 'post_images': post_images})
 
 
 def embroidery(request):

@@ -1,31 +1,55 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+    <section class="bg-silkscreen-start">
+        <div class="header-wrapper">
+            <h1>{{ page.name }}</h1>
+        </div>
+    </section>
     <div class="main-container">
-        <div class="page-name"><h1>{{ page.name }}</h1></div>
-        <div class="text-silkscreen">{{ page.text }}</div>
+        <div class="text-silkscreen"></div>
         <div class="row">
             <div class="column">
-                <div class="text-1-silkscreen">{{ page.text }}</div>
+                <div class="text-silkscreen">{{ page.text_2 }}</div>
             </div>
             <div class="column">
-                <div class="text-2-silkscreen">{{ page.text }}</div>
+                <div class="text-silkscreen">{{ page.text_3 }}</div>
             </div>
         </div>
-
-        <h2>Посты по шелкографии:</h2>
-        <div>
-            {% for post in posts %}
-                <div class="row">
-                    <div class="column">
-                        <img src="{{ post.url }}" alt="">
-                    </div>
-                    <div class="column">
-                        <div class="text-4-silkscreen">{{ post.text }}</div>
-                    </div>
+        <div class="section-title">
+            <h1>ОСТОРОЖНО!</h1>
+            <p>МЫ КАЧЕСТВЕННО ВЫПОЛНЯЕМ СВОЮ РАБОТУ.</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="button-wrapper">
+                    <button class="w3-btn w3-orange w3-border w3-round-large">CONTACTS</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="button-wrapper">
+                    <button class="w3-btn w3-black w3-border w3-round-large">Why VEKTOR?</button>
+                </div>
+            </div>
+        </div>
+        <div class="section-title">
+            <h1> Что мы уже сделали? </h1>
+        </div>
+        <div class="gallery">
+            {% for post, images in post_images.items %}
+                <div class="gallery-item">
+                    {#                    <h5>{{ post.text }}</h5>#}
+                    {% if images %}
+                        <img src="{{ images.0.image_i.url }}" alt="Image">
+                    {% endif %}
                 </div>
             {% endfor %}
         </div>
 
     </div>
+    <section class="bg-silkscreen-end">
+        <div class="header-wrapper">
+            {#                <h5>Vector printing your dreams</h5>#}
+        </div>
+    </section>
 {% endblock content %}

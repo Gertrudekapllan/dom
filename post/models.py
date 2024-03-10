@@ -15,10 +15,11 @@ class Category(models.Model):
 
 
 class Post(models.Model):
-    text = models.TextField(verbose_name="Оп")
+    text = models.TextField(verbose_name="Описание")
+    # TODO remove image_p from this entity
     image_p = models.ImageField(upload_to="images/", verbose_name="Фото", null=True, blank=True)
     date_posted = models.DateTimeField(auto_now_add=True)
-    category = models.ManyToManyField(Category, verbose_name="Кат")
+    category = models.ManyToManyField(Category, verbose_name="Категория")
     # image_t = models.ImageField(verbose_name='Кар')
 
     # def __str__(self):

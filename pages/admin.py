@@ -3,7 +3,7 @@ from pages.models import Page
 
 
 class PageAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'text', 'image')
+    list_display = ('id', 'name', 'text_1', 'image')
     list_display_links = ('id', 'name')
     search_fields = ('name',)
 
