@@ -34,7 +34,11 @@ def dtf_printing(request):
 
 def embroidery(request):
     page = Page.objects.get(machine_name='embroidery')
-    return render(request, 'embroidery.html', {'page': page})
+    posts = Post.objects.filter(category=2)
+    post_images = {}
+    for post in posts:
+        post_images[post] = Image.objects.filter(post=post)
+    return render(request, 'embroidery.html', {'page': page, 'post_images': post_images})
 
 
 def printing_special_effects(request):

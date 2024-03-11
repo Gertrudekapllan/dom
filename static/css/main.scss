@@ -1,4 +1,5 @@
 @import "cat";
+
 header.header {
   height: 80px;
 
@@ -203,14 +204,49 @@ div.desc {
 
 .bg-silkscreen-end {
   padding: 220px 0 40px 0;
-  background: url(../images/silk-end.jpg) fixed;
+  background: url(../images/IMG_4057.JPG) fixed;
   background-size: cover;
   background-position: center center;
+
 }
 
 .bg-dtf-start {
   padding: 220px 0 40px 0;
   background: url(../images/dtf-start.jpg) fixed;
+  background-size: cover;
+  background-position: center center;
+
+  .header-wrapper {
+    height: 100px;
+    text-align: center;
+
+    h1 {
+      font-size: 55px;
+      text-shadow: #000000 1px 1px 0;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+
+    }
+
+    h5 {
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+
+.bg-emb-end {
+  padding: 220px 0 40px 0;
+  background: url(../images/hoodie.jpg) fixed;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.bg-emb-start {
+  padding: 220px 0 40px 0;
+  background: url(../images/emb-start.jpg) fixed;
   background-size: cover;
   background-position: center center;
 
