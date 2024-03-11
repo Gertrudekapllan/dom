@@ -1,7 +1,50 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>printing_special_effects</h1>
-    {{ page.name }}
-    {{ page.text }}
-    {{ page.machine_name }}
+    <section class="bg-sub-start">
+        <div class="header-wrapper">
+            <h1>{{ page.name }}</h1>
+        </div>
+    </section>
+    <div class="main-container">
+{#    <section class="section-title">#}
+{#        <div class="text-silkscreen">{{ page.text_1 }}</div>#}
+{#    </section>#}
+        <div class="row">
+            <div class="column">
+                <div class="text-silkscreen">{{ page.text_2 }}</div>
+            </div>
+            <div class="column">
+                <div class="text-silkscreen">{{ page.text_3 }}</div>
+            </div>
+        </div>
+        <div class="section-title">
+            <h1>ОСТОРОЖНО!</h1>
+            <p>{{ page.text_1 }}</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="button-wrapper">
+                    <button class="w3-btn w3-orange w3-border w3-round-large">CONTACTS</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="button-wrapper">
+                    <button class="w3-btn w3-black w3-border w3-round-large">Why VEKTOR?</button>
+                </div>
+            </div>
+        </div>
+        <div class="section-title">
+            <h1> Что мы уже сделали? </h1>
+        </div>
+        <div class="gallery">
+            {% for post, images in post_images.items %}
+                <div class="gallery-item">
+                    {#                    <h5>{{ post.text }}</h5>#}
+                    {% if images %}
+                        <img src="{{ images.0.image_i.url }}" alt="Image">
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock content %}

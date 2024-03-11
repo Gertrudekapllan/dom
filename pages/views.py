@@ -25,7 +25,7 @@ def silkscreen(request):
 
 def dtf_printing(request):
     page = Page.objects.get(machine_name='dtf_printing')
-    posts = Post.objects.filter(category=6)
+    posts = Post.objects.filter(category=3)
     post_images = {}
     for post in posts:
         post_images[post] = Image.objects.filter(post=post)
@@ -43,7 +43,11 @@ def embroidery(request):
 
 def printing_special_effects(request):
     page = Page.objects.get(machine_name='printing_special_effects')
-    return render(request, 'printing_special_effects.html', {'page': page})
+    posts = Post.objects.filter(category=5)
+    post_images = {}
+    for post in posts:
+        post_images[post] = Image.objects.filter(post=post)
+    return render(request, 'printing_special_effects.html', {'page': page, 'post_images': post_images})
 
 
 def individual_print(request):
@@ -53,4 +57,8 @@ def individual_print(request):
 
 def sublimation_printing(request):
     pages = Page.objects.get(machine_name='sublimation_printing')
-    return render(request, 'sublimation_printing.html', {'page': pages})
+    posts = Post.objects.filter(category=6)
+    post_images = {}
+    for post in posts:
+        post_images[post] = Image.objects.filter(post=post)
+    return render(request, 'sublimation_printing.html', {'page': pages, 'post_images': post_images})

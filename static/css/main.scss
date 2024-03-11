@@ -174,7 +174,7 @@ div.desc {
 
 .bg-silkscreen-start {
   padding: 220px 0 40px 0;
-  background: url(../images/silk.jpg) fixed;
+  background: url(../images/4.1.jpg) fixed;
   background-size: cover;
   background-position: center center;
 
@@ -183,7 +183,7 @@ div.desc {
     //background-color: #3a3a3a;
     text-align: center;
     //-webkit-box-shadow: inset 0px 10px 20px -15px rgba(0, 0, 0, 1);
-    //-moz-box-shadow: inset 0px 10px 20px -15px rgba(0, 0, 0, 1);
+    //-moz-box-shadow: inset 0px 10px 20px -15px rgba(0, 0, 0, 1); //#shadow
     //box-shadow: inset 0px 10px 20px -15px rgba(0, 0, 0, 1);
 
     h1 {
@@ -204,7 +204,7 @@ div.desc {
 
 .bg-silkscreen-end {
   padding: 220px 0 40px 0;
-  background: url(../images/IMG_4057.JPG) fixed;
+  background: url(../images/dtf-start.jpg) fixed;
   background-size: cover;
   background-position: center center;
 
@@ -236,13 +236,6 @@ div.desc {
   }
 }
 
-.bg-emb-end {
-  padding: 220px 0 40px 0;
-  background: url(../images/hoodie.jpg) fixed;
-  background-size: cover;
-  background-position: center center;
-
-}
 
 .bg-emb-start {
   padding: 220px 0 40px 0;
@@ -269,3 +262,132 @@ div.desc {
     }
   }
 }
+
+.bg-emb-end {
+  padding: 220px 0 40px 0;
+  background: url(../images/hoodie.jpg) fixed;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.bg-pse-start {
+  padding: 220px 0 40px 0;
+  background: url(../images/1.jpg) fixed;
+  background-size: cover;
+  background-position: center center;
+
+  .header-wrapper {
+    height: 100px;
+    text-align: center;
+
+    h1 {
+      font-size: 55px;
+      text-shadow: #000000 1px 1px 0;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+
+    }
+
+    h5 {
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+
+.bg-pse-end {
+  padding: 220px 0 40px 0;
+  background: url(../images/hoodie.jpg) fixed;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.section {
+  padding: 250px 0 40px 0;
+  background: url(../images/dtf-start.jpg) fixed;
+  background-size: cover;
+  background-position: center center;
+
+  h3 {
+    font-size: 20px;
+    text-shadow: #000000 1px 1px 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 900;
+
+    color: white;
+    text-align: center;
+  }
+  a {
+    font-size: 20px;
+    font-weight: 500;
+
+    color: white;
+    text-align: center;
+  }
+}
+.bg-ind-start {
+  padding: 220px 0 40px 0;
+  background: url(../images/3.1.jpg) fixed;
+  background-size: cover;
+  background-position: center center;
+
+  .header-wrapper {
+    height: 100px;
+    text-align: center;
+    //background-color: rgba(255, 165, 0, 0.5);
+    //-webkit-box-shadow: inset 0px 10px 20px -15px rgba(0, 0, 0, 1);
+    //-moz-box-shadow: inset 0px 10px 20px -15px rgba(0, 0, 0, 1); //#shadow
+    //box-shadow: inset 0px 10px 20px -15px rgba(0, 0, 0, 1);
+
+    h1 {
+      font-size: 45px;
+      text-shadow: #000000 1px 1px 0;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+
+    }
+
+    h5 {
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+.bg-sub-start {
+  padding: 220px 0 40px 0;
+  background: url(../images/4.2.jpg) fixed;
+  background-size: cover;
+  background-position: center center;
+
+  .header-wrapper {
+    height: 100px;
+    text-align: center;
+
+    h1 {
+      font-size: 45px;
+      text-shadow: #000000 1px 1px 0;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+
+    }
+
+    h5 {
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+

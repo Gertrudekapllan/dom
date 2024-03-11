@@ -17,20 +17,23 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class PostAdmin(admin.ModelAdmin):
     inlines = [PostImageInline]
-    list_display = ('id', 'text', 'image_preview', )
+    list_display = ('id', 'text', 'image_preview', 'get_category',)
     list_display_links = ('id',)
     search_fields = ('text',)
 
     def image_preview(self, obj):
-        first_image = obj.image_set.first()
-        if first_image:
-            return mark_safe('<img src="{}" width="100" />'.format(first_image.image_i.url))
+        images = obj.image_set.all()
+        if images:
+            image_tags = ''.join('<img src="{}" width="100" />'.format(image.image_i.url) for image in images)
+            return mark_safe(image_tags)
         else:
-            return 'No Image'
+            return 'No Images'
 
     image_preview.short_description = 'Image Preview'
 
-    image_preview.short_description = 'Image Preview'
+    def get_category(self, obj):
+        return ', '.join(category.name for category in obj.category.all())
+    get_category.short_description = 'Category'
 
 
 admin.site.register(Image)
