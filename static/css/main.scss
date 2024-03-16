@@ -1,4 +1,4 @@
-@import "cat";
+//@import "cat";
 
 header.header {
   height: 80px;
@@ -204,7 +204,7 @@ div.desc {
 
 .bg-silkscreen-end {
   padding: 220px 0 40px 0;
-  background: url(../images/dtf-start.jpg) fixed;
+  //background: url(../images/dtf-start.jpg) fixed;
   background-size: cover;
   background-position: center center;
 
@@ -305,11 +305,17 @@ div.desc {
 
 }
 
-.section {
+.section-footer {
   padding: 250px 0 40px 0;
   background: url(../images/dtf-start.jpg) fixed;
   background-size: cover;
   background-position: center center;
+  height: 880px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.section {
 
   h3 {
     font-size: 20px;
@@ -328,6 +334,7 @@ div.desc {
     color: white;
     text-align: center;
   }
+
   a {
     font-size: 20px;
     font-weight: 500;
@@ -336,6 +343,7 @@ div.desc {
     text-align: center;
   }
 }
+
 .bg-ind-start {
   padding: 220px 0 40px 0;
   background: url(../images/3.1.jpg) fixed;
@@ -365,6 +373,7 @@ div.desc {
     }
   }
 }
+
 .bg-sub-start {
   padding: 220px 0 40px 0;
   background: url(../images/4.2.jpg) fixed;
@@ -391,3 +400,67 @@ div.desc {
   }
 }
 
+footer {
+  background-color: darkgray;
+  margin-top: 120px;
+
+  .banner {
+
+    width: 80vw;
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+    position: relative;
+    bottom: 40px;
+    margin: 0 auto;
+
+    .banner-div-left {
+      margin-left: 50px;
+      flex-direction: row;
+      display: flex;
+      grid-area: span 1 / span 2 / span 1 / span 2;
+      align-self: center;
+      justify-self: start;
+    }
+
+    .banner-div-right {
+      margin-left: 50px;
+
+      align-self: center;
+      justify-self: end
+    }
+  }
+
+
+  .footer-content {
+    width: 1000px;
+    height: 300px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+
+  }
+
+  .footer-closer {
+    width: 1000px;
+    height: 50px;
+    color: white;
+    border-top: 1px solid black;
+    margin: 20px auto 0;
+    padding-top: 20px;
+  }
+
+  .row {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .column {
+      margin: 20px;
+      text-align: left;
+    }
+  }
+}
