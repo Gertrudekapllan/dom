@@ -6,9 +6,9 @@
         </div>
     </section>
     <div class="main-container">
-{#    <section class="section-title">#}
-{#        <div class="text-silkscreen">{{ page.text_1 }}</div>#}
-{#    </section>#}
+        {#    <section class="section-title">#}
+        {#        <div class="text-silkscreen">{{ page.text_1 }}</div>#}
+        {#    </section>#}
         <div class="row">
             <div class="column">
                 <div class="text-silkscreen">{{ page.text_2 }}</div>
@@ -20,7 +20,7 @@
         <div class="section-title">
             <h1>ОСТОРОЖНО!</h1>
             <p>ВЫШИВКА БУДЕТ КРЕПЧЕ, ЧЕМ ВАШИ ОТНОШЕНИЯ</p>
-                        <p>{{ page.text_1 }}</p>
+            <p>{{ page.text_1 }}</p>
         </div>
         <div class="row">
             <div class="column">
@@ -42,7 +42,7 @@
                 <div class="gallery-item">
                     {#                    <h5>{{ post.text }}</h5>#}
                     {% if images %}
-                        <img src="{{ images.0.image_i.url }}" alt="Image">
+                        <a href="/post/{{ post.pk }}"><img src="{{ images.0.image_i.url }}" alt="Image"></a>
                     {% endif %}
                 </div>
             {% endfor %}

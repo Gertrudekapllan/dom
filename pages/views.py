@@ -62,3 +62,7 @@ def sublimation_printing(request):
     for post in posts:
         post_images[post] = Image.objects.filter(post=post)
     return render(request, 'sublimation_printing.html', {'page': pages, 'post_images': post_images})
+
+
+def about_us(request):
+    return render(request, 'about_us.html')

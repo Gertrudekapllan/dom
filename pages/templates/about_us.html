@@ -1,13 +1,11 @@
 {% extends 'base.html' %}
-{% load static %}
 {% block content %}
-    <section class="bg-silkscreen-start">
+    <section class="bg-ind-start">
         <div class="header-wrapper">
-            <h1>{{ page.name }}</h1>
+            <h1>{{ page.text_1 }}</h1>
         </div>
     </section>
     <div class="main-container">
-        <div class="text-silkscreen"></div>
         <div class="row">
             <div class="column">
                 <div class="text-silkscreen">{{ page.text_2 }}</div>
@@ -18,9 +16,7 @@
         </div>
         <div class="section-title">
             <h1>ОСТОРОЖНО!</h1>
-            <p>МЫ КАЧЕСТВЕННО ВЫПОЛНЯЕМ СВОЮ РАБОТУ.</p>
-            <p>{{ page.text_1 }}</p>
-
+{#            <p>{{ page.text_1 }}</p>#}
         </div>
         <div class="row">
             <div class="column">
@@ -34,22 +30,5 @@
                 </div>
             </div>
         </div>
-        <div class="section-title">
-            <h1> Что мы уже сделали? </h1>
-        </div>
-        <div class="gallery">
-            {% for post, images in post_images.items %}
-                <div class="gallery-item">
-                    {#                    <h5>{{ post.text }}</h5>#}
-                    {% if images %}
-                        <a href="/post/{{ post.pk }}"><img src="{{ images.0.image_i.url }}" alt="Image"></a>
-                    {% endif %}
-                </div>
-            {% endfor %}
-        </div>
-
     </div>
-    <section class="bg-silkscreen-end">
-        <div class="header-wrapper"></div>
-    </section>
 {% endblock content %}

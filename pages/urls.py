@@ -1,6 +1,7 @@
 from django.urls import path
 
 from pages import views as pages_views
+from pages.views import about_us
 from post import views as post_views
 
 urlpatterns = [
@@ -12,4 +13,5 @@ urlpatterns = [
     path('services/individual-print/', pages_views.individual_print, name='individual_print'),
     path('services/sublimation_printing/', pages_views.sublimation_printing, name='sublimation_printing'),
     path('post/<int:pk>', post_views.post_page),
+    path('about-us/', pages_views.about_us, name='about_us'),
 ]
