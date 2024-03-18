@@ -14,4 +14,7 @@ urlpatterns = [
     path('services/sublimation_printing/', pages_views.sublimation_printing, name='sublimation_printing'),
     path('post/<int:pk>', post_views.post_page),
     path('about-us/', pages_views.about_us, name='about_us'),
+    path('gallery/', pages_views.gallery, name='gallery'),
+    path('why-vector/', pages_views.why_vector, name='why_vector'),
+
 ]

@@ -66,3 +66,14 @@ def sublimation_printing(request):
 
 def about_us(request):
     return render(request, 'about_us.html')
+
+
+def gallery(request):
+    images = Image.objects.all()
+    return render(request, 'gallery.html', {'images': images})
+
+
+def why_vector(request):
+    pages = Page.objects.get(machine_name='why_vector')
+    images = Image.objects.all()
+    return render(request, 'why-vector.html', {'page': pages, 'images': images})
