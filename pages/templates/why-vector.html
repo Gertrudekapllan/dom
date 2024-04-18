@@ -7,31 +7,20 @@
         </div>
     </section>
     <div class="main-container">
-        <div class="text-silkscreen"></div>
+        <div class="text-why-vector"></div>
         <div class="row">
             <div class="column">
-                <div class="text-silkscreen">{{ page.text_2 }}</div>
+                <div class="text-why-vector">{{ page.text_2 }}</div>
             </div>
             <div class="column">
-                <div class="text-silkscreen">{{ page.text_3 }}</div>
+                <div class="text-why-vector">{{ page.text_3 }}</div>
             </div>
         </div>
         <div class="section-title">
             <h1>ОСТОРОЖНО!</h1>
             <p>МЫ КАЧЕСТВЕННО ВЫПОЛНЯЕМ СВОЮ РАБОТУ.</p>
             <p>{{ page.text_1 }}</p>
-        </div>
-        <div class="section-title">
-            <h1> Что мы уже сделали? </h1>
-        </div>
-        <div class="gallery">
-            {% for image in images %}
-                <div class="gallery-item">
-                    {% if images %}
-                        <img src="{{ image.image_i.url }}" alt="Image">
-                    {% endif %}
-                </div>
-            {% endfor %}
+
         </div>
         <div class="row">
             <div class="column">
@@ -45,6 +34,17 @@
                 </div>
             </div>
         </div>
+        <div class="section-title">
+            <h1> Что мы уже сделали? </h1>
+        </div>
+        <div class="gallery">
+            {% for images in images.items %}
+                <div class="gallery-item">
+                        <img src="{{ image.image_i.url }}" alt="Image">
+                </div>
+            {% endfor %}
+        </div>
+
     </div>
     <section class="bg-silkscreen-end">
         <div class="header-wrapper"></div>

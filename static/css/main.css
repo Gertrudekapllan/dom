@@ -1,10 +1,6 @@
 @charset "UTF-8";
 header.header {
   height: 80px; }
-  header.header .logo {
-    background-color: #aaaaaa; }
-    header.header .logo img {
-      width: 60px; }
 
 div.gallery {
   column-count: 4;
@@ -135,7 +131,7 @@ div.desc {
 
 .bg-silkscreen-end {
   padding: 220px 0 40px 0;
-  background: url(../images/1.jpg) fixed;
+  background: url(../images/shirt.jpg) fixed;
   background-size: cover;
   background-position: center center; }
 
@@ -319,5 +315,10 @@ footer {
 .text-why-vector {
   height: 100px;
   text-align: center; }
+
+.main-page-logo {
+  padding: 6px 16px !important; }
+  .main-page-logo .logo {
+    width: 100px; }
 
 /*# sourceMappingURL=main.css.map */
