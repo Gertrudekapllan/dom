@@ -265,7 +265,7 @@ div.desc {
 
 .bg-pse-start {
   padding: 220px 0 40px 0;
-  background: url(../images/1.jpg) fixed;
+  background: url(../images/hoodie.jpg) fixed;
   background-size: cover;
   background-position: center center;
 
@@ -464,8 +464,20 @@ footer {
 
 .main-page-logo {
   padding: 6px 16px !important;
+
   .logo {
     width: 100px;
   }
 
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+.image-special>img{
+  border-radius: 50%;
 }

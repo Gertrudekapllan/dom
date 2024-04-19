@@ -179,7 +179,7 @@ div.desc {
 
 .bg-pse-start {
   padding: 220px 0 40px 0;
-  background: url(../images/1.jpg) fixed;
+  background: url(../images/hoodie.jpg) fixed;
   background-size: cover;
   background-position: center center; }
   .bg-pse-start .header-wrapper {
@@ -320,5 +320,14 @@ footer {
   padding: 6px 16px !important; }
   .main-page-logo .logo {
     width: 100px; }
+
+.text-align-left {
+  text-align: left; }
+
+.text-align-right {
+  text-align: right; }
+
+.image-special > img {
+  border-radius: 50%; }
 
 /*# sourceMappingURL=main.css.map */

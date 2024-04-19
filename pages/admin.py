@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from pages.models import Page
+from pages.models import Page, PageSpecial
 
 
 class PageAdmin(admin.ModelAdmin):
@@ -16,4 +16,9 @@ class PageAdmin(admin.ModelAdmin):
             return 'No Image'
 
 
+class PageSpecialAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name')
+
+
 admin.site.register(Page, PageAdmin)
+admin.site.register(PageSpecial, PageSpecialAdmin)

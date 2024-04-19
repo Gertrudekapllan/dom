@@ -1,7 +1,7 @@
 from django.db.models import Subquery, OuterRef
 from django.shortcuts import render
 
-from pages.models import Page
+from pages.models import Page, PageSpecial
 from post.models import Post, Image
 
 
@@ -42,11 +42,12 @@ def embroidery(request):
 
 
 def printing_special_effects(request):
-    page = Page.objects.get(machine_name='printing_special_effects')
+    page = PageSpecial.objects.get(machine_name='printing_special_effects')
     posts = Post.objects.filter(category=5)
     post_images = {}
     for post in posts:
         post_images[post] = Image.objects.filter(post=post)
+
     return render(request, 'printing_special_effects.html', {'page': page, 'post_images': post_images})
 
 

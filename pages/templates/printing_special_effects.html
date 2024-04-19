@@ -6,32 +6,42 @@
         </div>
     </section>
     <div class="main-container">
-{#    <section class="section-title">#}
-{#        <div class="text-silkscreen">{{ page.text_1 }}</div>#}
-{#    </section>#}
         <div class="row">
             <div class="column">
-                <div class="text-silkscreen">{{ page.text_2 }}</div>
+                <div class="text-special text-align-left">{{ page.text_1 }}</div>
             </div>
             <div class="column">
-                <div class="text-silkscreen">{{ page.text_3 }}</div>
+                <div class="image-special"><img src="{{ page.image_1.url }}" alt="Image"></div>
             </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="image-special"><img src="{{ page.image_2.url }}" alt="Image"></div>
+            </div>
+            <div class="column">
+                <div class="text-special text-align-right">{{ page.text_2 }}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="text-special text-align-left">{{ page.text_3 }}</div>
+            </div>
+            <div class="column">
+                <div class="image-special"><img src="{{ page.image_3.url }}" alt="Image"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="image-special"><img src="{{ page.image_4.url }}" alt="Image"></div>
+            </div>
+            <div class="column">
+                <div class="text-special-left">{{ page.text_4 }}</div>
+            </div>
+
         </div>
         <div class="section-title">
             <h1>ОСТОРОЖНО!</h1>
             <p>{{ page.text_1 }}</p>
-        </div>
-        <div class="row">
-            <div class="column">
-                <div class="button-wrapper">
-                    <button class="w3-btn w3-orange w3-border w3-round-large">CONTACTS</button>
-                </div>
-            </div>
-            <div class="column">
-                <div class="button-wrapper">
-                    <button class="w3-btn w3-black w3-border w3-round-large">Why VEKTOR?</button>
-                </div>
-            </div>
         </div>
         <div class="section-title">
             <h1> Что мы уже сделали? </h1>
