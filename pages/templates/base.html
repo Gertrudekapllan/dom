@@ -5,6 +5,12 @@
     {% load static %}
     <link rel="stylesheet" href="../../static/css/w3.css">
     <link href="{% sass_src 'css/main.scss' %}" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header class="header">
@@ -14,7 +20,8 @@
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right custom-right"
                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
                     class="fa fa-bars"></i></a>
-            <a href="/" class="main-page-logo custom-left"><img class="logo" src="../../static/images/logo-gray.png"></a>
+            <a href="/" class="main-page-logo custom-left"><img class="logo"
+                                                                src="../../static/images/logo-gray.png"></a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small custom-right">Контакты</a>
             <a href="/gallery/" class="w3-bar-item w3-button w3-padding-large w3-hide-small custom-right">Галерея</a>
             <a href="/why-vector/" class="w3-bar-item w3-button w3-padding-large w3-hide-small custom-right">Почему

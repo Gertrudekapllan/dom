@@ -195,6 +195,7 @@ div.desc {
 }
 
 .bg-silkscreen-end {
+  margin-top: 50px;
   padding: 220px 0 40px 0;
   background: url(../images/shirt.jpg) fixed;
   background-size: cover;
@@ -471,13 +472,106 @@ footer {
 
 }
 
+.text-special {
+  margin-top: 10px;
+  font-size: small;
+  color: #666666;
+}
+
 .text-align-left {
   text-align: left;
 }
 
 .text-align-right {
   text-align: right;
+
 }
-.image-special>img{
-  border-radius: 50%;
+
+.image-special > img {
+  border-radius: 20px;
+}
+
+.image-special > img {
+  width: 250px;
+  //box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.wrapper-special {
+  border-top: 1px solid #ccc;
+  margin-top: 70px;
+
+}
+
+.name-special {
+  font-family: Nunito, sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.icons-for {
+  height: 370px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 90px;
+  color: #3a3a3a;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+
+}
+
+.icons-wrapper {
+  float: left;
+  margin: 40px 62px;
+
+}
+
+.t {
+  margin-top: 10px;
+  font-family: Nunito, sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.t-shirt {
+  color: red;
+}
+
+.case {
+  color: darkblue;
+}
+
+.music {
+  color: darkred;
+}
+
+.art {
+  color: darkgreen;
+}
+
+.rest {
+  color: orange;
+}
+
+.siz {
+  color: #3f51b5;
+}
+
+.micr {
+  color: #3a3a3a;
+}
+
+.shop {
+  color: red;
+}
+.text-for{
+  margin-top: 40px;
+  font-family: Nunito, sans-serif;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+
 }

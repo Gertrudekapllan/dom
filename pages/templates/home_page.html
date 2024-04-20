@@ -32,7 +32,6 @@
                     plastisol, water base/ discharge, foil, puff ink, and metallic inks. We offer high quality inks, and
                     computerized Pantone system which is sure to keep colors accurate from the start and consistent for
                     re-orders.
-
                 </div>
             </div>
             <div class="row">
@@ -53,21 +52,49 @@
                         {#                    <h5>{{ post.text }}</h5>#}
                         {% if images %}
                             <a href="/post/{{ post.pk }}"><img src="{{ images.0.image_i.url }}" alt="Image"></a>
-
                         {% endif %}
                     </div>
                 {% endfor %}
             </div>
-            <div class="gallery">
-                <div class="grid">
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                </div>
-            </div>
-            </body>
         </div>
+    <section>
+        <div class="text-for">
+            ДЛЯ КОГО?
+        </div>
+    </section>
+        <section class="icons-for">
+            <div class="icons-wrapper">
+                <i class="fa-solid fa-shirt fa-4x t-shirt"></i>
+                <div class="t">Бренды одежды</div>
+            </div>
+            <div class="icons-wrapper">
+                <i class="fa-solid fa-briefcase fa-4x case"></i>
+                <div class="t">Коммерция</div>
+            </div>
+            <div class="icons-wrapper">
+                <i class="fa-solid fa-guitar fa-4x music"></i>
+                <div class="t">Музыканты</div>
+            </div>
+            <div class="icons-wrapper">
+                <i class="fa-solid fa-palette fa-4x art"></i>
+                <div class="t">Художники</div>
+            </div>
+            <div class="icons-wrapper">
+                <i class="fa-solid fa-pizza-slice fa-4x rest"></i>
+                <div class="t">Рестораны</div>
+            </div>
+            <div class="icons-wrapper">
+                <i class="fa-solid fa-scissors fa-4x siz"></i>
+                <div class="t">Швейные фабрики</div>
+            </div>
+            <div class="icons-wrapper">
+                <i class="fa-solid fa-microphone-lines fa-4x micr"></i>
+                <div class="t">Фестивали</div>
+            </div>
+            <div class="icons-wrapper">
+                <i class="fa-solid fa-apple-whole fa-4x shop"></i>
+                <div class="t">Магазины</div>
+            </div>
+        </section>
     </div>
 {% endblock content %}
