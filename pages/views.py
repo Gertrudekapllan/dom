@@ -78,3 +78,8 @@ def why_vector(request):
     pages = Page.objects.get(machine_name='why_vector')
     images = Image.objects.all()
     return render(request, 'why-vector.html', {'page': pages, 'images': images})
+
+
+def contacts(request):
+    pages = Page.objects.get(machine_name='contacts')
+    return render(request, 'contacts.html', {'page': pages})

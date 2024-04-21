@@ -16,5 +16,6 @@ urlpatterns = [
     path('about-us/', pages_views.about_us, name='about_us'),
     path('gallery/', pages_views.gallery, name='gallery'),
     path('why-vector/', pages_views.why_vector, name='why_vector'),
+    path('contacts/', pages_views.contacts, name='contacts'),
 
 ]

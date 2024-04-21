@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="bg-contacts-start">
+        <div class="header-wrapper">
+            <h1>{{ page.name }}</h1>
+        </div>
+    </section>
+    <div class="main-container">
+        <div class="text-why-vector"></div>
+        <div class="row">
+            <div class="column">
+                <div class="text-why-vector">{{ page.text_1 }}</div>
+            </div>
+            <div class="column">
+                <div class="text-why-vector">{{ page.text_2 }}</div>
+            </div>
+        </div>
+
+    </div>
+    <section class="bg-contacts-end">
+        <div class="header-wrapper"></div>
+    </section>
+    <section class="bg-contacts-end">
+        <div class="header-wrapper"></div>
+    </section>
+{% endblock content %}

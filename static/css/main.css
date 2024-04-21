@@ -72,6 +72,7 @@ div.desc {
     color: white; }
 
 .header-text {
+  font-family: Nunito, sans-serif;
   width: 50%;
   margin: 0 auto;
   text-align: center; }
@@ -103,7 +104,8 @@ div.desc {
   width: 1000px;
   margin: 0 auto; }
   .main-container .text-silkscreen {
-    text-align: justify; }
+    text-align: justify;
+    font-family: Nunito, sans-serif; }
 
 .w3-btn {
   margin: 0 auto; }
@@ -130,7 +132,6 @@ div.desc {
       color: white; }
 
 .bg-silkscreen-end {
-  margin-top: 50px;
   padding: 220px 0 40px 0;
   background: url(../images/shirt.jpg) fixed;
   background-size: cover;
@@ -174,7 +175,7 @@ div.desc {
 
 .bg-emb-end {
   padding: 220px 0 40px 0;
-  background: url(../images/hoodie.jpg) fixed;
+  background: url(../images/shirt.jpg) fixed;
   background-size: cover;
   background-position: center center; }
 
@@ -352,14 +353,14 @@ footer {
   height: 370px;
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 50px;
   color: #3a3a3a;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc; }
 
 .icons-wrapper {
   float: left;
-  margin: 40px 62px; }
+  margin: 50px 62px; }
 
 .t {
   margin-top: 10px;
@@ -369,35 +370,66 @@ footer {
   font-weight: bold; }
 
 .t-shirt {
-  color: red; }
+  color: #3a3a3a; }
 
 .case {
-  color: darkblue; }
+  color: #3a3a3a; }
 
 .music {
-  color: darkred; }
+  color: #3a3a3a; }
 
 .art {
-  color: darkgreen; }
+  color: #3a3a3a; }
 
 .rest {
-  color: orange; }
+  color: #3a3a3a; }
 
 .siz {
-  color: #3f51b5; }
+  color: #3a3a3a; }
 
 .micr {
   color: #3a3a3a; }
 
 .shop {
-  color: red; }
+  color: #3a3a3a; }
 
 .text-for {
-  margin-top: 40px;
+  margin-top: 10px;
   font-family: Nunito, sans-serif;
   color: black;
   font-size: 40px;
   font-weight: bold;
   text-align: center; }
+
+.bg-contacts-start {
+  padding: 220px 0 40px 0;
+  background: url(../images/hoodie.jpg) fixed;
+  background-size: cover;
+  background-position: center center; }
+  .bg-contacts-start .header-wrapper {
+    height: 100px;
+    text-align: center; }
+    .bg-contacts-start .header-wrapper h1 {
+      font-family: Nunito, sans-serif;
+      font-size: 45px;
+      text-shadow: #000000 1px 1px 0;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.bg-contacts-end {
+  padding: 220px 0 40px 0;
+  background: url(../images/3.1.jpg) fixed;
+  background-size: cover;
+  background-position: center center; }
+  .bg-contacts-end .header-wrapper {
+    height: 100px;
+    text-align: center; }
+    .bg-contacts-end .header-wrapper h1 {
+      font-size: 45px;
+      text-shadow: #000000 1px 1px 0;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */
