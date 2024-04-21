@@ -3,6 +3,7 @@
 <head>
     <title>{% block title %} {% endblock %}</title>
     {% load static %}
+    <script src="../../static/js/slideshow.js"></script>
     <link rel="stylesheet" href="../../static/css/w3.css">
     <link href="{% sass_src 'css/main.scss' %}" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +28,7 @@
             <a href="/why-vector/" class="w3-bar-item w3-button w3-padding-large w3-hide-small custom-right">Почему
                 МЫ?</a>
             <div class="w3-dropdown-hover w3-hide-small custom-right">
-                <button class="w3-padding-large w3-button" title="More">Что МЫ делаем?<i class="fa fa-caret-down"></i>
-                </button>
+                <button class="w3-padding-large w3-button" title="More">Что МЫ делаем?</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
                     <a href="/services/silkscreen/" class="w3-bar-item w3-button">Шелкография</a>
                     <a href="/services/dtf-printing/" class="w3-bar-item w3-button">ДТФ-Печать</a>
