@@ -7,4 +7,5 @@ def post_page(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post_images = {}
     post_images[post] = Image.objects.filter(post=post)
+    print(post_images)
     return render(request, 'post_page.html', {'post': post, 'post_images': post_images})
