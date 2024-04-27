@@ -1,11 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section class="bg-silkscreen-start">
-        <div class="header-wrapper">
-            <h1>{{ page.name }}</h1>
-        </div>
-    </section>
+    <h1>{{ page.name }}</h1>
     <div class="main-container">
         <div class="text-why-vector"></div>
         <div class="row">
@@ -34,16 +30,16 @@
                 </div>
             </div>
         </div>
-{#        <div class="section-title">#}
-{#            <h1> Что мы уже сделали? </h1>#}
-{#        </div>#}
-{#        <div class="gallery">#}
-{#            {% for images in images.items %}#}
-{#                <div class="gallery-item">#}
-{#                        <img src="{{ image.image_i.url }}" alt="Image">#}
-{#                </div>#}
-{#            {% endfor %}#}
-{#        </div>#}
+        {#        <div class="section-title">#}
+        {#            <h1> Что мы уже сделали? </h1>#}
+        {#        </div>#}
+        {#        <div class="gallery">#}
+        {#            {% for images in images.items %}#}
+        {#                <div class="gallery-item">#}
+        {#                        <img src="{{ image.image_i.url }}" alt="Image">#}
+        {#                </div>#}
+        {#            {% endfor %}#}
+        {#        </div>#}
 
     </div>
     <section class="bg-silkscreen-end">

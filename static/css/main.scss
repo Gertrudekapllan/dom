@@ -512,8 +512,8 @@ footer {
 }
 
 .icons-for {
-  height: 400px;
-  max-width: 1000px;
+  height: 340px;
+  width: 1000px;
   margin: 0 auto;
   margin-top: 50px;
   color: #3a3a3a;
@@ -525,8 +525,9 @@ footer {
 
 .icons-wrapper {
   float: left;
-  margin: 50px 62px;
-
+  margin: 30px 30px;
+  width: 180px;
+  text-align: center;
 }
 
 .t {
