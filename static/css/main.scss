@@ -2,12 +2,12 @@
 @import "slideshow";
 
 header.header {
-  height: 80px;
+  //height: 80px;
 
 }
 
 div.gallery {
-  column-count: 3;
+  column-count: 5;
   column-gap: 1em;
   max-width: 1000px;
   margin: 0 auto;
@@ -22,6 +22,10 @@ div.gallery {
 
 .section-title {
   text-align: center;
+
+}.section-title-gallery {
+  text-align: center;
+  color: white;
 
 }
 
@@ -261,7 +265,13 @@ div.desc {
 
 .bg-emb-end {
   padding: 220px 0 40px 0;
-  background: url(../images/shirt.jpg) fixed;
+  background: url(../images/emb-start.jpg) fixed;
+  background-size: cover;
+  background-position: center center;
+
+}.bg-emb-ser {
+  padding: 220px 0 40px 0;
+  background: url(../images/spe-start.png) fixed;
   background-size: cover;
   background-position: center center;
 
@@ -342,7 +352,7 @@ div.desc {
 
 .bg-ind-start {
   padding: 220px 0 40px 0;
-  background: url(../images/3.1.jpg) fixed;
+  background: url(../images/silk.jpg) fixed;
   background-size: cover;
   background-position: center center;
 
@@ -464,6 +474,11 @@ footer {
 .text-why-vector {
   height: 100px;
   text-align: center;
+  color: white;
+  font-family: Nunito, sans-serif;
+  font-weight: bold;
+  font-size: large;
+
 }
 
 .main-page-logo {
@@ -491,6 +506,11 @@ footer {
 }
 
 .image-special > img {
+  border-radius: 20px;
+}
+
+.image-special-emb > img {
+  width: 250px;
   border-radius: 20px;
 }
 

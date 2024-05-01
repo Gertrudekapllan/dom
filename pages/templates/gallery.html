@@ -1,12 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section class="bg-silkscreen-start">
+        <section class="bg-ind-start">
         <div class="header-wrapper">
             <h1>{{ page.name }}</h1>
         </div>
-    </section>
+
     <div class="main-container">
+         <div class="section-title-gallery">
+            <h1> Взгляни на сие великолепие и сделай ПРАВИЛЬНЫЙ выбор, не звони нам! </h1>
+        </div>
         <div class="text-silkscreen"></div>
         <div class="row">
             <div class="column">
@@ -16,14 +19,7 @@
                 <div class="text-silkscreen">{{ page.text_3 }}</div>
             </div>
         </div>
-        <div class="section-title">
-            <h1>ОСТОРОЖНО!</h1>
-            <p>МЫ КАЧЕСТВЕННО ВЫПОЛНЯЕМ СВОЮ РАБОТУ.</p>
-            <p>{{ page.text_1 }}</p>
-        </div>
-        <div class="section-title">
-            <h1> Что мы уже сделали? </h1>
-        </div>
+
         <div class="gallery">
             {% for image in images %}
                 <div class="gallery-item">
@@ -46,7 +42,5 @@
             </div>
         </div>
     </div>
-    <section class="bg-silkscreen-end">
-        <div class="header-wrapper"></div>
     </section>
 {% endblock content %}

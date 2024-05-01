@@ -1,48 +1,32 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <h1>{{ page.name }}</h1>
-    <div class="main-container">
-        <div class="text-why-vector"></div>
-        <div class="row">
-            <div class="column">
-                <div class="text-why-vector">{{ page.text_2 }}</div>
-            </div>
-            <div class="column">
-                <div class="text-why-vector">{{ page.text_3 }}</div>
-            </div>
+    <section class="bg-ind-start">
+        <div class="header-wrapper">
+            <h1>{{ page.text_1 }}</h1>
         </div>
-        <div class="section-title">
-            <h1>ОСТОРОЖНО!</h1>
-            <p>МЫ КАЧЕСТВЕННО ВЫПОЛНЯЕМ СВОЮ РАБОТУ.</p>
-            <p>{{ page.text_1 }}</p>
-
-        </div>
-        <div class="row">
-            <div class="column">
-                <div class="button-wrapper">
-                    <button class="w3-btn w3-orange w3-border w3-round-large">CONTACTS</button>
+        <div class="main-container">
+            <div class="text-why-vector"></div>
+            <div class="row">
+                <div class="column">
+                    <div class="text-why-vector">{{ page.text_2 }}</div>
+                </div>
+                <div class="column">
+                    <div class="text-why-vector">{{ page.text_3 }}</div>
                 </div>
             </div>
-            <div class="column">
-                <div class="button-wrapper">
-                    <button class="w3-btn w3-black w3-border w3-round-large">Why VEKTOR?</button>
+            <div class="row">
+                <div class="column">
+                    <div class="button-wrapper">
+                        <button class="w3-btn w3-orange w3-border w3-round-large">CONTACTS</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="button-wrapper">
+                        <button class="w3-btn w3-black w3-border w3-round-large">Why VEKTOR?</button>
+                    </div>
                 </div>
             </div>
         </div>
-        {#        <div class="section-title">#}
-        {#            <h1> Что мы уже сделали? </h1>#}
-        {#        </div>#}
-        {#        <div class="gallery">#}
-        {#            {% for images in images.items %}#}
-        {#                <div class="gallery-item">#}
-        {#                        <img src="{{ image.image_i.url }}" alt="Image">#}
-        {#                </div>#}
-        {#            {% endfor %}#}
-        {#        </div>#}
-
-    </div>
-    <section class="bg-silkscreen-end">
-        <div class="header-wrapper"></div>
     </section>
 {% endblock content %}
