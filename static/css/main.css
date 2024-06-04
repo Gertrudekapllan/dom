@@ -274,12 +274,15 @@ div.desc {
 
 .bg-pse-start {
   padding: 220px 0 40px 0;
-  background: url(../images/hoodie.jpg) fixed;
+  background: url(../images/banki2.jpg) fixed;
   background-size: cover;
   background-position: center center; }
   .bg-pse-start .header-wrapper {
-    height: 100px;
-    text-align: center; }
+    height: auto;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 20px; }
     .bg-pse-start .header-wrapper h1 {
       font-size: 55px;
       text-shadow: #000000 1px 1px 0;
@@ -292,7 +295,7 @@ div.desc {
 
 .bg-pse-end {
   padding: 220px 0 40px 0;
-  background: url(../images/hoodie.jpg) fixed;
+  background: url(../images/kraski.JPG) fixed;
   background-size: cover;
   background-position: center center; }
 
@@ -421,9 +424,15 @@ footer {
     width: 100px; }
 
 .text-special {
-  margin-top: 10px;
+  margin: auto;
   font-size: small;
   color: #666666; }
+
+.text-align-justify {
+  text-align: justify; }
+
+.text-align-center {
+  text-align: center; }
 
 .text-align-left {
   text-align: left; }

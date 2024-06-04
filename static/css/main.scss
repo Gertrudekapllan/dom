@@ -279,13 +279,16 @@ div.desc {
 
 .bg-pse-start {
   padding: 220px 0 40px 0;
-  background: url(../images/hoodie.jpg) fixed;
+  background: url(../images/banki2.jpg) fixed;
   background-size: cover;
   background-position: center center;
 
   .header-wrapper {
-    height: 100px;
+    height: auto;
     text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 20px;
 
     h1 {
       font-size: 55px;
@@ -305,7 +308,7 @@ div.desc {
 
 .bg-pse-end {
   padding: 220px 0 40px 0;
-  background: url(../images/hoodie.jpg) fixed;
+  background: url(../images/kraski.JPG) fixed;
   background-size: cover;
   background-position: center center;
 
@@ -491,11 +494,16 @@ footer {
 }
 
 .text-special {
-  margin-top: 10px;
+  margin: auto;
   font-size: small;
   color: #666666;
 }
-
+.text-align-justify{
+  text-align: justify;
+}
+.text-align-center{
+  text-align: center;
+}
 .text-align-left {
   text-align: left;
 }
