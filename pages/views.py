@@ -3,6 +3,8 @@ from django.shortcuts import render
 
 from pages.models import Page, PageSpecial
 from post.models import Post, Image
+from django.core.serializers import serialize
+from collections import defaultdict
 
 
 def home_page(request):
@@ -69,10 +71,32 @@ def about_us(request):
     return render(request, 'about_us.html')
 
 
+# def gallery(request):
+#     images = Image.objects.all()
+#     grouped_images = defaultdict(list)
+#     print('asdf')
+#     for image in images:
+#         post_id = image.post.id
+#         image_data = {
+#             "pk": image.pk,
+#             "image_i": image.image_i,  # assuming image_i is an ImageField
+#         }
+#         grouped_images[post_id].append(image_data)
+#     grouped_images = dict(grouped_images)
+#     print(grouped_images)
+#     # for post_id, images in grouped_images.items():
+#     #     print(f'Post ID: {post_id}')
+#     #     for image in images:
+#     #         print(f' - Image ID: {image.pk}, Image Path: {image.image_i}')
+#
+#     return render(request, 'gallery.html', {'images': grouped_images.items()})
 def gallery(request):
+    from collections import defaultdict
     images = Image.objects.all()
-    return render(request, 'gallery.html', {'images': images})
-
+    grouped_images = defaultdict(list)
+    for image in images:
+        grouped_images[image.post_id].append(image)
+    return render(request, 'gallery.html', {'grouped_images': grouped_images.items()})
 
 def why_vector(request):
     pages = Page.objects.get(machine_name='why_vector')

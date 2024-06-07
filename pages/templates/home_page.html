@@ -46,16 +46,16 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery">
-                {% for post, images in post_images.items %}
-                    <div class="gallery-item">
+{#            <div class="gallery">#}
+{#                {% for post, images in post_images.items %}#}
+{#                    <div class="gallery-item">#}
                         {#                    <h5>{{ post.text }}</h5>#}
-                        {% if images %}
-                            <a href="/post/{{ post.pk }}"><img src="{{ images.0.image_i.url }}" alt="Image"></a>
-                        {% endif %}
-                    </div>
-                {% endfor %}
-            </div>
+{#                        {% if images %}#}
+{#                            <a href="/post/{{ post.pk }}"><img src="{{ images.0.image_i.url }}" alt="Image"></a>#}
+{#                        {% endif %}#}
+{#                    </div>#}
+{#                {% endfor %}#}
+{#            </div>#}
         </div>
     <section>
         <div class="bg-pse-start text-for">

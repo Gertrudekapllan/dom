@@ -1,46 +1,45 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-        <section class="bg-ind-start">
+    <section class="bg-ind-start">
         <div class="header-wrapper">
             <h1>{{ page.name }}</h1>
         </div>
 
-    <div class="main-container">
-         <div class="section-title-gallery">
-            <h1> Взгляни на сие великолепие и сделай ПРАВИЛЬНЫЙ выбор, не звони нам! </h1>
-        </div>
-        <div class="text-silkscreen"></div>
-        <div class="row">
-            <div class="column">
-                <div class="text-silkscreen">{{ page.text_2 }}</div>
+        <div class="main-container">
+            <div class="section-title-gallery">
+                <h1> Взгляни на сие великолепие и сделай ПРАВИЛЬНЫЙ выбор, не звони нам! </h1>
             </div>
-            <div class="column">
-                <div class="text-silkscreen">{{ page.text_3 }}</div>
-            </div>
-        </div>
-
-        <div class="gallery">
-            {% for image in images %}
-                <div class="gallery-item">
-                    {% if images %}
-                        <img src="{{ image.image_i.url }}" alt="Image">
-                    {% endif %}
+            <div class="text-silkscreen"></div>
+            <div class="row">
+                <div class="column">
+                    <div class="text-silkscreen">{{ page.text_2 }}</div>
                 </div>
-            {% endfor %}
-        </div>
-        <div class="row">
-            <div class="column">
-                <div class="button-wrapper">
-                    <button class="w3-btn w3-orange w3-border w3-round-large">CONTACTS</button>
+                <div class="column">
+                    <div class="text-silkscreen">{{ page.text_3 }}</div>
                 </div>
             </div>
-            <div class="column">
-                <div class="button-wrapper">
-                    <button class="w3-btn w3-black w3-border w3-round-large">Why VEKTOR?</button>
+            <div class="gallery">
+                {% for post_id, images in grouped_images %}
+                    {% for image in images %}
+                        <div class="gallery-item">
+                            <img src="{{ image.image_i.url }}" alt="Image">
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="button-wrapper">
+                        <button class="w3-btn w3-orange w3-border w3-round-large">CONTACTS</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="button-wrapper">
+                        <button class="w3-btn w3-black w3-border w3-round-large">Why VEKTOR?</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 {% endblock content %}
