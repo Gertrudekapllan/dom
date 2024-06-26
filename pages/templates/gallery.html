@@ -21,11 +21,20 @@
             </div>
             <div class="gallery">
                 {% for post_id, images in grouped_images %}
-                    {% for image in images %}
-                        <div class="gallery-item">
-                            <img src="{{ image.image_i.url }}" alt="Image">
+                    {% if images %}
+                        <div class="gallery-item" id="post_id-{{ post_id }}">
+                            <!-- Div for the first image -->
+                            <div class="first-gallery-item">
+                                <img src="{{ images.0.image_i.url }}" alt="First Image">
+                            </div>
+                            <!-- Div for all other images -->
+                            <div class="other-gallery-items">
+                                {% for image in images|slice:"1:" %}
+                                    <img src="{{ image.image_i.url }}" alt="Image">
+                                {% endfor %}
+                            </div>
                         </div>
-                    {% endfor %}
+                    {% endif %}
                 {% endfor %}
             </div>
             <div class="row">

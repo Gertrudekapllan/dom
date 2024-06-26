@@ -92,8 +92,9 @@ div.gallery {
   max-width: 1000px;
   margin: 0 auto; }
   div.gallery .gallery-item {
+    display: flex;
+    align-items: stretch;
     background: #ddd;
-    display: inline-block;
     margin: 0 0 1em;
     width: 100%; }
 

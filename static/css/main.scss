@@ -13,8 +13,9 @@ div.gallery {
   margin: 0 auto;
 
   .gallery-item {
+    display: flex;
+    align-items: stretch;
     background: #ddd;
-    display: inline-block;
     margin: 0 0 1em;
     width: 100%;
   }
@@ -23,7 +24,9 @@ div.gallery {
 .section-title {
   text-align: center;
 
-}.section-title-gallery {
+}
+
+.section-title-gallery {
   text-align: center;
   color: white;
 
@@ -269,7 +272,9 @@ div.desc {
   background-size: cover;
   background-position: center center;
 
-}.bg-emb-ser {
+}
+
+.bg-emb-ser {
   padding: 220px 0 40px 0;
   background: url(../images/spe-start.png) fixed;
   background-size: cover;
@@ -498,12 +503,15 @@ footer {
   font-size: small;
   color: #666666;
 }
-.text-align-justify{
+
+.text-align-justify {
   text-align: justify;
 }
-.text-align-center{
+
+.text-align-center {
   text-align: center;
 }
+
 .text-align-left {
   text-align: left;
 }
