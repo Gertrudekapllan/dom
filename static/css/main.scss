@@ -7,10 +7,9 @@ header.header {
 }
 
 div.gallery {
-  column-count: 5;
-  column-gap: 1em;
-  max-width: 1000px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 
   .gallery-item {
     display: flex;
@@ -18,6 +17,23 @@ div.gallery {
     background: #ddd;
     margin: 0 0 1em;
     width: 100%;
+
+    .first-gallery-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .other-gallery-items {
+      width: 40%;
+    }
   }
 }
 
