@@ -555,4 +555,10 @@ footer {
       text-transform: uppercase;
       font-weight: 700; }
 
+.wrapper-footer-icons .footer-icons {
+  width: 250px;
+  height: 50px; }
+  .wrapper-footer-icons .footer-icons .fa-brands {
+    color: white; }
+
 /*# sourceMappingURL=main.css.map */
